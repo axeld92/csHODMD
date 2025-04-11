@@ -16,8 +16,6 @@ dt = 2/30;               % Time step between snapshots
 % Run readmats to get X, x, y, and other variables
 run('readmats.m')
 
-[n, m] = size(X);
-
 %% Compressed sensing setup
 [n, m] = size(X);
 p = round(n*compression_ratio);
